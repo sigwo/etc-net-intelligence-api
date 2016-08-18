@@ -13,11 +13,11 @@
       "NODE_ENV"        : "production",
       "RPC_HOST"        : "localhost",
       "RPC_PORT"        : "8588",
-      "LISTENING_PORT"  : "30303",
+      "LISTENING_PORT"  : "30388",
       "INSTANCE_NAME"   : "sigwo",
       "CONTACT_DETAILS" : "steven@sigwo.com",
-      "WS_SERVER"       : "ws://rpc.bemining.net",
-      "WS_SECRET"       : "helloWorld", // see https://github.com/Machete3000/etc-net-intelligence-api
+      "WS_SERVER"       : "ws://rpc.sigwo.com",
+      "WS_SECRET"       : "helloWorld",
       "VERBOSITY"       : 2
     }
   }
