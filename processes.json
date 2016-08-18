@@ -1,0 +1,43 @@
+[
+  {
+    "name"              : "jbs-ee",
+    "cwd"               : "/root/etc-net-intelligence-api/",
+    "script"            : "bin/gjbsee.sh",
+    "args"              : "password",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "log_file"          : "/root/logs/eth-log.log",
+    "out_file"          : "/root/logs/eth-out.log",
+    "error_file"        : "/root/logs/eth-err.log",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "bash",
+    "exec_mode"         : "fork_mode"
+  },
+  {
+    "name"              : "node-app",
+    "cwd"               : "/root/etc-net-intelligence-api/",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "log_file"          : "/root/logs/node-app-log.log",
+    "out_file"          : "/root/logs/node-app-out.log",
+    "error_file"        : "/root/logs/node-app-err.log",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "localhost",
+      "RPC_PORT"        : "8588",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "yourInstanceName",
+      "CONTACT_DETAILS" : "email",
+      "WS_SERVER"       : "ws://127.0.0.1:3000",
+      "WS_SECRET"       : "helloWorld",
+      "VERBOSITY"       : 2
+    }
+  }
+]
