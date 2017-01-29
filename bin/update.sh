@@ -28,17 +28,17 @@ error()
 heading "Updating ethereum"
 
 # figure out what we have to update
-if [[ -f /usr/bin/geth ]];
+if [[ -f /usr/bin/gubiq ]];
 then
-	ethtype="geth"
-	success "Found geth"
+	ethtype="gubiq"
+	success "Found gubiq"
 else
 	if [[ -f /usr/bin/eth ]];
 	then
 		ethtype="eth"
 		success "Found eth"
 	else
-		error "Couldn't find ethereum"
+		error "Couldn't find Ubiq, call Luke"
 		exit 0
 	fi
 fi
