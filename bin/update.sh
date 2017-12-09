@@ -25,7 +25,7 @@ error()
 	echo "${red}==>${bold} Error: $1${reset}"
 }
 
-heading "Updating ethereum"
+heading "Updating Ubiq"
 
 # figure out what we have to update
 if [[ -f /usr/bin/gubiq ]];
@@ -77,7 +77,7 @@ git pull
 sudo npm update
 cd ..
 
-success "Ethereum was updated successfully"
+success "Ubiq was updated successfully"
 
 heading "Restarting processes"
 pm2 start processes.json
