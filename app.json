@@ -13,19 +13,11 @@
       "NODE_ENV"        : "production",
       "RPC_HOST"        : "localhost",
       "RPC_PORT"        : "8588",
-<<<<<<< HEAD
       "LISTENING_PORT"  : "30388",
-      "INSTANCE_NAME"   : "",
-      "CONTACT_DETAILS" : "",
-      "WS_SERVER"       : "wss://ubiq.darcr.us",
-      "WS_SECRET"       : "contact xocel or sigwo in the ubiq slack.",
-=======
-      "LISTENING_PORT"  : "30303",
-      "INSTANCE_NAME"   : "",
-      "CONTACT_DETAILS" : "",
-      "WS_SERVER"       : "ws://rpc.bemining.net",
+      "INSTANCE_NAME"   : "sigwo",
+      "CONTACT_DETAILS" : "steven@sigwo.com",
+      "WS_SERVER"       : "ws://rpc.sigwo.com",
       "WS_SECRET"       : "helloWorld",
->>>>>>> 8dc4dbda28e4d7088826f5b638a5074ba62f1e44
       "VERBOSITY"       : 2
     }
   }
