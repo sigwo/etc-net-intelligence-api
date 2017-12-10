@@ -1,6 +1,5 @@
 Ubiq Network Intelligence API
 ============
-[![Build Status][travis-image]][travis-url] [![dependency status][dep-image]][dep-url]
 
 This is the backend service which runs along with ubiq and tracks the network status, fetches information through JSON-RPC and connects through WebSockets to the [ubiq netstats page](https://ubiq.darcr.us) to feed information.
 
